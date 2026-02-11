@@ -110,38 +110,37 @@ export default function AboutPage() {
       {/* Mission & Vision */}
       <section className="py-16 lg:py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="flex flex-col gap-12 lg:gap-16">
             {/* Who We Are */}
-            <div>
+            <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white font-display mb-6">
-                WHO WE ARE
+                ABOUT US
               </h2>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center shrink-0">
-                    <Target className="w-6 h-6 text-[var(--primary)]" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 dark:text-white mb-1">OUR MISSION</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      To eliminate hunger through sustainable food distribution, community
-                      empowerment, and emergency relief programs that restore dignity and
-                      create lasting change.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[var(--accent-gold)]/10 rounded-lg flex items-center justify-center shrink-0">
-                    <Eye className="w-6 h-6 text-[var(--accent-gold)]" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 dark:text-white mb-1">OUR VISION</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      A world where no one goes hungry. Where every community has access
-                      to nutritious food, clean water, and the resources they need to thrive.
-                    </p>
-                  </div>
-                </div>
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                Feeding Humanity was founded on the belief that everyone deserves access to
+                nutritious food. What began as a small initiative to provide meals to a local
+                shelter has grown into a global movement. We are driven by compassion, guided by
+                the principle of “feeding the body, nourishing the soul,” and committed to making
+                a tangible difference in the fight against hunger.
+              </p>
+
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white font-display mb-6">
+                WHY OUR WORK MATTERS
+              </h2>
+              <div className="space-y-6 text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p>
+                  Every year, millions of people are impacted by unforeseen disasters—whether it’s
+                  a devastating earthquake, a severe flood, or the devastating effects of war. In
+                  these dire moments, families often struggle to access even the most basic
+                  necessities like food and clean water. Feeding Humanity is committed to providing
+                  immediate relief in these crises, ensuring that the most vulnerable receive the
+                  aid they need to survive.
+                </p>
+                <p>
+                  Our emergency teams work tirelessly to deliver food packs, clean water, and
+                  hygiene kits to those in need, making sure that help arrives when it’s needed
+                  most.
+                </p>
               </div>
             </div>
 

@@ -136,8 +136,8 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-sm text-gray-400">Email Us</p>
-                <a href="mailto:info@feedinghumanity.org" className="text-white hover:text-emerald-400">
-                  info@feedinghumanity.org
+                <a href="mailto:admin@feedinghumanity.org.uk" className="text-white hover:text-emerald-400">
+                  admin@feedinghumanity.org.uk
                 </a>
               </div>
             </div>
@@ -147,8 +147,8 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-sm text-gray-400">Call Us</p>
-                <a href="tel:+441onal234567890" className="text-white hover:text-emerald-400">
-                  +44 (0) 123 456 7890
+                <a href="tel:03334439931" className="text-white hover:text-emerald-400">
+                  0333 443 9931
                 </a>
               </div>
             </div>
@@ -166,12 +166,15 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-gray-950 py-6">
+      <div className="bg-gray-950 py-8 border-t border-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Feeding Humanity. Registered Charity No. 123456. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-sm text-gray-400">
+          <div className="text-gray-500 text-sm order-2 md:order-1">
+            <p>
+              &copy; {new Date().getFullYear()} Feeding Humanity. All rights reserved.
+            </p>
+          </div>
+
+          <div className="flex gap-6 text-sm text-gray-400 order-1 md:order-2">
             <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
@@ -181,6 +184,31 @@ export default function Footer() {
             <Link href="/cookies" className="hover:text-white transition-colors">
               Cookie Policy
             </Link>
+          </div>
+
+          <div className="flex items-center gap-2 order-3">
+            <a
+              href="https://paksoft.com.tr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center group"
+            >
+              <span className="text-gray-600 mr-2 group-hover:text-[var(--accent-gold)] transition-colors text-sm">
+                Developed by
+              </span>
+              <div className="flex items-center text-[var(--accent-gold)] group-hover:text-yellow-400 transition-colors">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5 -rotate-12"
+                >
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.85 0 3.58-.5 5.08-1.38-.7.13-1.42.21-2.16.21-5.52 0-10-4.48-10-10S9.42 2.83 14.92 2.83c.74 0 1.46.08 2.16.21C15.58 2.5 13.85 2 12 2z" />
+                </svg>
+                <span className="font-bold text-lg tracking-wide ml-1">
+                  PakSoft
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
